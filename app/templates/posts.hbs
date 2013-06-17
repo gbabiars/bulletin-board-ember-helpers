@@ -1,0 +1,7 @@
+<p>{{percent model.length}}</p>
+
+<ul>
+{{#each model}}
+    <li>{{#linkTo post this}}{{title}}{{/linkTo}} - {{relativeDate createdAt}}</li>
+{{/each}}
+</ul>
